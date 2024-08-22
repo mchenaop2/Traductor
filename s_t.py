@@ -113,8 +113,8 @@ if result:
         output_language = "ja"
     elif out_lang == "Francés":
         output_language = "fr"
-    elif in_lang == "Hawaiano":
-        input_language = "haw"
+    elif out_lang == "Hawaiano":
+        output_language = "haw"
         
     
     english_accent = st.selectbox(
