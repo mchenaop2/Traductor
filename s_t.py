@@ -73,7 +73,7 @@ if result:
     text = str(result.get("GET_TEXT"))
     in_lang = st.selectbox(
         "Selecciona el lenguaje de Entrada",
-        ("Inglés", "Español", "Bengali", "Coreano", "Mandarín", "Japonés", "Francés"),
+        ("Inglés", "Español", "Bengali", "Coreano", "Mandarín", "Japonés", "Francés", "Hawaiano"),
     )
     if in_lang == "Inglés":
         input_language = "en"
@@ -89,12 +89,15 @@ if result:
         input_language = "ja"
     elif in_lang == "Francés":
         input_language = "fr"
+    elif in_lang == "Hawaiano":
+        input_language = "haw"
+        
         
         
     
     out_lang = st.selectbox(
         "Selecciona el lenguaje de salida",
-        ("Inglés", "Español", "Bengali", "Coreano", "Mandarín", "Japonés", "Francés"),
+        ("Inglés", "Español", "Bengali", "Coreano", "Mandarín", "Japonés", "Francés", "Hawaiano"),
     )
     if out_lang == "Inglés":
         output_language = "en"
@@ -110,6 +113,9 @@ if result:
         output_language = "ja"
     elif out_lang == "Francés":
         output_language = "fr"
+    elif in_lang == "Hawaiano":
+        input_language = "haw"
+        
     
     english_accent = st.selectbox(
         "Selecciona el acento",
